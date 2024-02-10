@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test:http": "node http.js & artillery run artillery.yaml",
+    "test:cluster": "node cluster.js & artillery run artillery.yaml",
+    "test:nginx": "node nginx.js & artillery run artillery.yaml"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17"
+  },
+  "dependencies": {
+    "artillery": "^2.0.5"
+  }
+}
